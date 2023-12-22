@@ -12,6 +12,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TargetCoordinates.msg"
+  "msg/DashboardValues.msg"
   "srv/SetDashboardKeys.srv"
   DEPENDENCIES geometry_msgs
 )
