@@ -1,0 +1,17 @@
+on: [push, pull_request]
+
+name: Ros 2 Build
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Build
+      uses: ichiro-its/ros2-ws-action/build@v1.0.0
+      with:
+        distro: humble
+    
