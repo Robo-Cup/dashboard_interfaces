@@ -9,6 +9,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        path: workspace
 
     - name: Build
       uses: ichiro-its/ros2-ws-action/build@v1.0.0
