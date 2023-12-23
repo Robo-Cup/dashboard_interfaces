@@ -12,6 +12,4 @@ jobs:
 
     - name: Build
       uses: ichiro-its/ros2-ws-action/build@v1.0.0
-      with:
-        distro: humble
     
