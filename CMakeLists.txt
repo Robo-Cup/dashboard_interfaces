@@ -14,6 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TargetCoordinates.msg"
   "msg/DashboardValues.msg"
   "srv/SetDashboardKeys.srv"
+  "action/ValueSubscription.action"
   DEPENDENCIES geometry_msgs
 )
 
